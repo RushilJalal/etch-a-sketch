@@ -15,12 +15,8 @@ body {
 
 .content {
     display: flex;
+    justify-content: space-between;
     gap: 20px;
-    justify-content: center;
-}
-
-h1 {
-    
 }
 
 .container {
@@ -30,32 +26,37 @@ h1 {
     height: 500px;
     cursor: crosshair;
     background-color: white;
-    border: 2px solid red;
+    border: 2px solid black;
+    margin-right: auto;
 }
 
 .cell {
     border: 1px solid black;
-    height: calc(500 / 30)px;
-    width: calc(500 / 30)px;
-}
-
-.hover {
-    background-color: brown;
+    height: calc(100% / 24);
+    width: calc(100% / 24);
 }
 
 .right {
     display: flex;
+    flex-direction: column;
     width: 200px;
+    gap: 20px;
 }
 
 .btn {
-    padding: 8px;
+    /* padding: 8px; */
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 2px 4px grey;
     height: 50px;
+    font-weight: 600;
 }
 
-.btn:hover {
+#change-grid:hover {
     background-color: lightgray;
 }
+
+label {
+    font-weight: 600;
+}
+
